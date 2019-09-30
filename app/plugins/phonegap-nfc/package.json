@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "phonegap-nfc",
+        "scope": null,
+        "escapedName": "phonegap-nfc",
+        "name": "phonegap-nfc",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/hariharan/Factory/app/node_modules"
+    ]
+  ],
+  "_from": "phonegap-nfc@latest",
+  "_id": "phonegap-nfc@0.6.6",
+  "_inCache": true,
+  "_location": "/phonegap-nfc",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "name": "don",
+    "email": "don.coleman@gmail.com"
+  },
+  "_npmVersion": "2.14.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "phonegap-nfc",
+    "scope": null,
+    "escapedName": "phonegap-nfc",
+    "name": "phonegap-nfc",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/phonegap-nfc/-/phonegap-nfc-0.6.6.tgz",
+  "_shasum": "7d635bc92d14eae003e799195bf02c3f7a2b9b76",
+  "_shrinkwrap": null,
+  "_spec": "phonegap-nfc",
+  "_where": "/Users/hariharan/Factory/app/node_modules",
+  "author": {
+    "name": "Don Coleman",
+    "email": "don.coleman@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/chariotsolutions/phonegap-nfc/issues"
+  },
+  "cordova": {
+    "id": "phonegap-nfc",
+    "platforms": [
+      "android",
+      "wp8",
+      "windows",
+      "blackberry10"
+    ]
+  },
+  "dependencies": {},
+  "description": "Near Field Communication (NFC) Plugin. Read and write NDEF messages to NFC tags and share NDEF messages with peers.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "7d635bc92d14eae003e799195bf02c3f7a2b9b76",
+    "tarball": "https://registry.npmjs.org/phonegap-nfc/-/phonegap-nfc-0.6.6.tgz"
+  },
+  "gitHead": "c6971b027a7d1fb572bacc4535e99a1b2b467741",
+  "homepage": "https://github.com/chariotsolutions/phonegap-nfc#readme",
+  "keywords": [
+    "nfc",
+    "ndef",
+    "ecosystem:cordova",
+    "cordova",
+    "cordova-android",
+    "cordova-wp8",
+    "cordova-windows",
+    "cordova-blackberry10"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "don",
+      "email": "don.coleman@gmail.com"
+    }
+  ],
+  "name": "phonegap-nfc",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chariotsolutions/phonegap-nfc.git"
+  },
+  "scripts": {},
+  "version": "0.6.6"
+}

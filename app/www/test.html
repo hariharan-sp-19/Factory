@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function test(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://192.168.1.6:3000/nfc/A1", false);
+    //xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+	}
+</script>
+</head>
+<body>
+<button onclick="test()">test</button>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<!--<nav class="navbar navbar-inverse navbar-default navbar-fixed-top">-->
+ <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="/">Home</a></li>
+  <li role="presentation"><a href="/manage">Manage Box</a></li>
+  <li role="presentation"><a href="/add">Add Box</a></li>
+  <li role="presentation"><a href="/additem">Add item</a></li>
+    <li role="presentation"><a href="/deleteitem">Delete Item</a></li>
+   <li role="presentation"><a href="/his">History</a></li>
+  <li role="presentation"><a class="pull-right" href="/logout">Logout</a></li>
+</ul>
+
+<div class="container">
+
+<div class="col-sm-6 col-sm-offset-3">
+
+	<h1><span class="fa fa-sign-in"></span>Add Box</h1>
+
+
+	<!-- LOGIN FORM -->
+	<form action="/add" method="post">
+		<div class="form-group">
+			<label>TYPE</label>
+			<input type="text" class="form-control" name="type">
+		</div>
+		<div class="form-group">
+			<label>Items</label>
+			<label>Specify items and quantity sepearated by colon:</label>
+      <select multiple class="form-control" name="items" id="items">
+      </select>
+      <input type="text" class="form-control" id="add">
+      <input  type="button" class="btn btn-md" onclick="myFunction()" value="ADD"></input>
+	  <input  type="button" class="btn btn-md" onclick="Delete()()" value="DEL"></input>
+		</div>
+
+		<div class="form-group">
+			<label>Number of Boxes</label>
+			<input type="text" class="form-control" name="count">
+		</div>
+
+		<button type="submit" onclick="selectAll()" class="btn btn-warning btn-lg">Add</button>
+	</form>
+
+	
+</div>
+
+</div>
+<br>
+<hr>
+<div class="container">
+  <h3>Availble Items</h3>
+  <ul>
+  {{#each var}}
+    <li>{{this.name}}</li>
+  {{/each}}
+  </ul>
+</div>
+<script type="text/javascript">
+
+	function myFunction() {
+    var x = document.getElementById("items");
+    var option = document.createElement("option");
+    option.text = document.getElementById('add').value;
+    x.add(option);
+}
+
+function Delete() {
+    var x = document.getElementById("items");
+    x.remove(x.selectedIndex);
+}
+
+
+
+function selectAll() { 
+	selectBox=document.getElementById('items');
+    // have we been passed an ID 
+    if (typeof selectBox == "string") { 
+        selectBox = document.getElementById(selectBox);
+    } 
+    // is the select box a multiple select box? 
+    if (selectBox.type == "select-multiple") { 
+        for (var i = 0; i < selectBox.options.length; i++) { 
+             selectBox.options[i].selected = selectAll; 
+        } 
+    }
+    }
+
+</script>
+</body>
+</html>

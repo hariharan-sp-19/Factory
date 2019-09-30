@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<!--<nav class="navbar navbar-inverse navbar-default navbar-fixed-top">-->
+ <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="/">Home</a></li>
+  <li role="presentation"><a href="/manage">Manage Box</a></li>
+  <li role="presentation"><a href="/add">Add Box</a></li>
+  <li role="presentation"><a href="/additem">Add item</a></li>
+  <li role="presentation"><a href="/deleteitem">Delete Item</a></li>
+     <li role="presentation"><a href="/his">History</a></li>
+  <li role="presentation"><a class="pull-right" href="/logout">Logout</a></li>  
+</ul>
+<br>
+<div style="padding: 20px;">
+<h3>Tracker</h3>
+<hr>
+<br>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each var}}
+      <tr>
+        <td>{{this.item}}</td>
+        <td>{{this.qty}}</td>
+        <td>{{this.from}}</td>
+        <td>{{this.to}}</td>
+        <td>{{this.date}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </div>
+  <br>
+  
+
+</body>
+</html>
